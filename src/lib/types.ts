@@ -1,13 +1,30 @@
 // Mirrors the enums in the backend's prisma/model/enum.prisma.
-export type EmploymentType = "FULL_TIME" | "PART_TIME" | "CONTRACT" | "INTERNSHIP";
+export type EmploymentType =
+  | "FULL_TIME"
+  | "PART_TIME"
+  | "CONTRACT"
+  | "INTERNSHIP";
 export type WorkMode = "REMOTE" | "HYBRID" | "ONSITE";
 export type RoleCategory =
-  | "BACKEND" | "FRONTEND" | "FULLSTACK" | "AI_ML"
-  | "DEVOPS" | "MOBILE" | "QA" | "DATA" | "OTHER";
+  | "BACKEND"
+  | "FRONTEND"
+  | "FULLSTACK"
+  | "AI_ML"
+  | "DEVOPS"
+  | "MOBILE"
+  | "QA"
+  | "DATA"
+  | "OTHER";
 export type SalaryPeriod = "MONTHLY" | "YEARLY";
 export type ApplicationStatus =
-  | "SAVED" | "CONSIDERING" | "APPLIED" | "INTERVIEW"
-  | "OFFER" | "ACCEPTED" | "REJECTED" | "WITHDRAWN";
+  | "SAVED"
+  | "CONSIDERING"
+  | "APPLIED"
+  | "INTERVIEW"
+  | "OFFER"
+  | "ACCEPTED"
+  | "REJECTED"
+  | "WITHDRAWN";
 
 export interface Job {
   id: string;
@@ -27,7 +44,7 @@ export interface ExperienceItem {
   role: string;
   company: string;
   start: string; // e.g. "Jun 2024"
-  end: string;   // e.g. "Aug 2024" or "Present"
+  end: string; // e.g. "Aug 2024" or "Present"
   bullets: string[];
 }
 

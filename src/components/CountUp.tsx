@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 export default function CountUp({ value }: { value: number }) {
   const [n, setN] = useState(value);
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return setN(value);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+      return setN(value);
     let raf = 0;
     const start = performance.now();
     const tick = (t: number) => {

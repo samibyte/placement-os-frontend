@@ -18,20 +18,32 @@ export default function Navbar() {
               }`}
             >
               {l}
-              {i === 0 && <span className="absolute -bottom-1 left-0 h-0.5 w-5 rounded bg-brand-500" />}
+              {i === 0 && (
+                <span className="absolute -bottom-1 left-0 h-0.5 w-5 rounded bg-brand-500" />
+              )}
             </a>
           ))}
         </nav>
       </div>
       <div className="flex items-center gap-3">
         {/* suppressHydrationWarning: autofill extensions inject attributes (e.g. fdprocessedid) into buttons */}
-        <button suppressHydrationWarning aria-label="Notifications" className="mr-2 text-ink/70 hover:text-brand-500">
+        <button
+          suppressHydrationWarning
+          aria-label="Notifications"
+          className="mr-2 text-ink/70 hover:text-brand-500"
+        >
           <Bell size={18} />
         </button>
-        <a href="/login" className="rounded-lg border border-line bg-white px-5 py-2.5 text-sm font-medium text-brand-500 hover:border-brand-300">
+        <a
+          href="/login"
+          className="rounded-lg border border-line bg-white px-5 py-2.5 text-sm font-medium text-brand-500 hover:border-brand-300"
+        >
           Log In
         </a>
-        <a href="/signup" className="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-medium text-white shadow-sm shadow-brand-500/30 hover:bg-brand-600">
+        <a
+          href="/signup"
+          className="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-medium text-white shadow-sm shadow-brand-500/30 hover:bg-brand-600"
+        >
           Sign Up
         </a>
       </div>
