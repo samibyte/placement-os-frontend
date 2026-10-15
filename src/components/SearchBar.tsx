@@ -24,10 +24,14 @@ export default function SearchBar() {
     router.push(`/jobs?${p.toString()}`);
   }
 
-  const select = "w-full appearance-none bg-transparent pr-6 text-sm text-ink outline-none";
+  const select =
+    "w-full appearance-none bg-transparent pr-6 text-sm text-ink outline-none";
 
   return (
-    <form onSubmit={submit} className="flex flex-col gap-2 rounded-xl border border-line bg-white p-2 shadow-[0_8px_30px_-12px_rgba(115,60,101,.25)] sm:flex-row sm:items-center">
+    <form
+      onSubmit={submit}
+      className="flex flex-col gap-2 rounded-xl border border-line bg-white p-2 shadow-[0_8px_30px_-12px_rgba(115,60,101,.25)] sm:flex-row sm:items-center"
+    >
       <label className="flex min-w-[120px] flex-1 items-center gap-3 px-3 py-2">
         <Search size={18} className="shrink-0 text-ink/70" />
         <input
@@ -41,20 +45,40 @@ export default function SearchBar() {
       <div className="hidden h-8 w-px bg-line sm:block" />
       <label className="relative flex items-center gap-2 px-2 py-2 sm:w-[136px] sm:shrink-0">
         <MapPin size={16} className="shrink-0 text-muted" />
-        <select suppressHydrationWarning value={loc} onChange={(e) => setLoc(e.target.value)} className={select}>
+        <select
+          suppressHydrationWarning
+          value={loc}
+          onChange={(e) => setLoc(e.target.value)}
+          className={select}
+        >
           <option value="">Location</option>
-          {locations.map((l) => <option key={l}>{l}</option>)}
+          {locations.map((l) => (
+            <option key={l}>{l}</option>
+          ))}
         </select>
-        <ChevronDown size={14} className="pointer-events-none absolute right-3 text-muted" />
+        <ChevronDown
+          size={14}
+          className="pointer-events-none absolute right-3 text-muted"
+        />
       </label>
       <div className="hidden h-8 w-px bg-line sm:block" />
       <label className="relative flex items-center gap-2 px-2 py-2 sm:w-[136px] sm:shrink-0">
         <Briefcase size={16} className="shrink-0 text-muted" />
-        <select suppressHydrationWarning value={type} onChange={(e) => setType(e.target.value)} className={select}>
+        <select
+          suppressHydrationWarning
+          value={type}
+          onChange={(e) => setType(e.target.value)}
+          className={select}
+        >
           <option value="">Job Type</option>
-          {types.map((t) => <option key={t}>{t}</option>)}
+          {types.map((t) => (
+            <option key={t}>{t}</option>
+          ))}
         </select>
-        <ChevronDown size={14} className="pointer-events-none absolute right-3 text-muted" />
+        <ChevronDown
+          size={14}
+          className="pointer-events-none absolute right-3 text-muted"
+        />
       </label>
       <button
         suppressHydrationWarning
