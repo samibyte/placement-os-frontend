@@ -24,7 +24,8 @@ export default function Navbar() {
         </nav>
       </div>
       <div className="flex items-center gap-3">
-        <button aria-label="Notifications" className="mr-2 text-ink/70 hover:text-brand-500">
+        {/* suppressHydrationWarning: autofill extensions inject attributes (e.g. fdprocessedid) into buttons */}
+        <button suppressHydrationWarning aria-label="Notifications" className="mr-2 text-ink/70 hover:text-brand-500">
           <Bell size={18} />
         </button>
         <a href="/login" className="rounded-lg border border-line bg-white px-5 py-2.5 text-sm font-medium text-brand-500 hover:border-brand-300">
