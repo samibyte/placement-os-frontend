@@ -1,4 +1,4 @@
-import { ArrowRight, Cloud, MapPin, Wallet } from "lucide-react";
+import { ArrowRight, Cloud, MapPin, Wallet } from "@phosphor-icons/react/dist/ssr";
 import SectionHeader from "./SectionHeader";
 import type { Job } from "@/lib/types";
 import {

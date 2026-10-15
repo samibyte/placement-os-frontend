@@ -1,4 +1,4 @@
-import { Cloud } from "lucide-react";
+import { Cloud } from "@phosphor-icons/react/dist/ssr";
 import CountUp from "./CountUp";
 import type { HeroData } from "@/lib/types";
 import { initials, progressFrom, shortAgo, statusLabel } from "@/lib/format";

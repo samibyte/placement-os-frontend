@@ -1,4 +1,4 @@
-import { Bell } from "lucide-react";
+import { Bell } from "@phosphor-icons/react/dist/ssr";
 import Logo from "./Logo";
 
 const links = ["Home", "Jobs", "CV Builder", "Track", "Resources", "About"];

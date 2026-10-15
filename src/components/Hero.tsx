@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import { Sparkle as Sparkles } from "@phosphor-icons/react/dist/ssr";
 import SearchBar from "./SearchBar";
 import HeroVisual from "./HeroVisual";
 import type { HeroData } from "@/lib/types";

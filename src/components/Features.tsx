@@ -1,4 +1,4 @@
-import { BarChart3, CalendarCheck, FileText, Target } from "lucide-react";
+import { ChartBar as BarChart3, CalendarCheck, FileText, Target } from "@phosphor-icons/react/dist/ssr";
 import SectionHeader from "./SectionHeader";
 
 const features = [

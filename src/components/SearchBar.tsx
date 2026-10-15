@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, ChevronDown, MapPin, Search } from "lucide-react";
+import { Briefcase, CaretDown as ChevronDown, MapPin, MagnifyingGlass as Search } from "@phosphor-icons/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
