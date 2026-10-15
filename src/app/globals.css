@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* PlacePath home-page palette (additive; does not override the shadcn tokens) */
+  /* placementos home-page palette (additive; does not override the shadcn tokens) */
   --font-script: "Segoe Script", "Bradley Hand", cursive;
   --color-ink: #1d1a24;
   --color-subtle: #6b6674;

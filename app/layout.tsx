@@ -3,7 +3,7 @@ import "@fontsource-variable/plus-jakarta-sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PlacePath — Redesign Your CV. Land Your Next Opportunity.",
+  title: "PlacementOS — Redesign Your CV. Land Your Next Opportunity.",
   description: "Tailor your CV to match job requirements, track applications, and get personalized guidance.",
 };
 

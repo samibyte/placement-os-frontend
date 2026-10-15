@@ -6,7 +6,7 @@ export default function Logo() {
         <path d="M13 11h6a3 3 0 0 1 0 6h-6v-6Z" fill="#fbf9fb" />
         <path d="M4 3l9 3v27l-9-3V3Z" fill="#733c65" opacity=".55" />
       </svg>
-      <span className="text-xl font-bold tracking-tight text-brand-500">PlacePath</span>
+      <span className="text-xl font-bold tracking-tight text-brand-500">PlacementOS</span>
     </a>
   );
 }
