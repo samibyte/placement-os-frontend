@@ -5,6 +5,20 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* PlacePath home-page palette (additive; does not override the shadcn tokens) */
+  --font-script: "Segoe Script", "Bradley Hand", cursive;
+  --color-ink: #1d1a24;
+  --color-subtle: #6b6674;
+  --color-line: #ece6ee;
+  --color-canvas: #fbf9fb;
+  --color-brand-50: #faf3f8;
+  --color-brand-100: #f3e6ef;
+  --color-brand-200: #e8cfe0;
+  --color-brand-300: #d6aac7;
+  --color-brand-400: #bc7ba6;
+  --color-brand-500: #a25b8f;
+  --color-brand-600: #8d4a7b;
+  --color-brand-700: #733c65;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
@@ -124,7 +138,8 @@
   body {
     @apply bg-background text-foreground;
   }
-  button:not(:disabled), [role="button"]:not(:disabled) {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
     cursor: pointer;
   }
   html {
