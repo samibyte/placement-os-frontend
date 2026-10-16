@@ -7,7 +7,7 @@ export default function Logo() {
         <path d="M4 3l9 3v27l-9-3V3Z" fill="#733c65" opacity=".55" />
       </svg>
       <span className="text-xl font-bold tracking-tight text-brand-500">
-        PlacePath
+        PlacementOS
       </span>
     </a>
   );

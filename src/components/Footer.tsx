@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-[1240px] flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
         <Logo />
         <p className="text-xs text-muted">
-          © {new Date().getFullYear()} PlacePath. All rights reserved.
+          © {new Date().getFullYear()} PlacementOS. All rights reserved.
         </p>
       </div>
     </footer>
